@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/pages/dashboard_page.dart';
-import 'package:hackfest2024_naara/pages/navigation/navigation_button.dart';
+import 'package:hackfest2024_naara/navigation/navigation_button.dart';
+import 'package:hackfest2024_naara/pages/education_page.dart';
+import 'package:hackfest2024_naara/pages/map_page.dart';
 import 'package:hackfest2024_naara/pages/profile_page.dart';
+import 'package:hackfest2024_naara/pages/technology_page.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -15,6 +18,9 @@ class _HomeState extends State<Home> {
 
   List screens = [
     DashboardPage(),
+    EducationPage(),
+    MapPage(),
+    TechnologyPage(),
     ProfilePage(),
   ];
 
@@ -34,7 +40,7 @@ class _HomeState extends State<Home> {
         body: Center(
           child: screens.elementAt(selectedIndex),
         ),
-        //drawer: SideMenu(),
+        // drawer: SideMenu(),
         bottomNavigationBar: BottomMenu(
           selectedIndex: selectedIndex,
           onClicked: onClicked,
