@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ProfileModel {
   int id;
-  Icon icon;
+  IconData icon;
   String title;
 
   ProfileModel({
@@ -17,7 +17,7 @@ class ProfileModel {
     profile.add(
       ProfileModel(
         id: 0,
-        icon: Icon(Icons.settings_rounded),
+        icon: Icons.settings_rounded,
         title: 'Settings',
       ),
     );
@@ -25,7 +25,7 @@ class ProfileModel {
     profile.add(
       ProfileModel(
         id: 0,
-        icon: Icon(Icons.language_rounded),
+        icon: Icons.language_rounded,
         title: 'Language',
       ),
     );
@@ -33,7 +33,7 @@ class ProfileModel {
     profile.add(
       ProfileModel(
         id: 0,
-        icon: Icon(Icons.dark_mode_rounded),
+        icon: Icons.dark_mode_rounded,
         title: 'Dark Mode',
       ),
     );
@@ -41,7 +41,7 @@ class ProfileModel {
     profile.add(
       ProfileModel(
         id: 0,
-        icon: Icon(Icons.logout_rounded),
+        icon: Icons.logout_rounded,
         title: 'Sign Out',
       ),
     );

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hackfest2024_naara/model/profile_model/profile_mode.dart';
+import 'package:hackfest2024_naara/widget/profile_page/proflie_list_widget.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -8,8 +10,15 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  List<ProfileModel> profile = [];
+
+  void initModel() {
+    profile = ProfileModel.getProfile();
+  }
+
   @override
   Widget build(BuildContext context) {
+    initModel();
     return Scaffold(
       body: Stack(
         children: [
@@ -22,7 +31,7 @@ class _ProfilePageState extends State<ProfilePage> {
             bottom: 0,
             left: 0,
             right: 0,
-            top: 250,
+            top: 200,
             child: Container(
               height: 340,
               decoration: BoxDecoration(
@@ -35,7 +44,7 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
           ),
           Positioned(
-            top: 190,
+            top: 140,
             left: 0,
             right: 0,
             child: Container(
@@ -52,20 +61,27 @@ class _ProfilePageState extends State<ProfilePage> {
             bottom: 0,
             left: 0,
             right: 0,
-            top: 350,
+            top: 270,
             child: Column(
               children: [
-                Row(
-                  children: [],
-                )
-                // Add other widgets below as needed
+                Text(
+                  'John Doe',
+                  style: TextStyle(
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  'Bandung',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ],
             ),
           ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
-            child: Container(),
-          )
+          ProfileListWidget(profile: profile)
         ],
       ),
     );
