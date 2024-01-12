@@ -9,7 +9,7 @@ class WaterInformation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(de),
+        Container(),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: Container(

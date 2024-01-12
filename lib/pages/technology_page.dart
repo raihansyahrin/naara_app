@@ -45,6 +45,7 @@ class _TechnologyPageState extends State<TechnologyPage> {
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: MasonryGridView.builder(
                         // physics: const NeverScrollableScrollPhysics(),
+                        primary: false,
                         itemCount: technology.length,
                         gridDelegate:
                             const SliverSimpleGridDelegateWithFixedCrossAxisCount(
