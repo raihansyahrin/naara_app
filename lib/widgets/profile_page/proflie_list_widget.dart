@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/models/profile_model/profile_mode.dart';
+import 'package:hackfest2024_naara/themes/colors.dart';
 
 class ProfileListWidget extends StatelessWidget {
   const ProfileListWidget({
@@ -15,7 +16,7 @@ class ProfileListWidget extends StatelessWidget {
       bottom: 0,
       left: 0,
       right: 0,
-      top: 340,
+      top: 360,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20),
         child: Container(
@@ -25,11 +26,10 @@ class ProfileListWidget extends StatelessWidget {
             itemBuilder: (context, index) {
               return Container(
                 width: 200,
-                height: 70,
+                height: 69,
                 padding: EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(10)),
+                    color: primary, borderRadius: BorderRadius.circular(10)),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -52,7 +52,7 @@ class ProfileListWidget extends StatelessWidget {
                         Text(
                           profile[index].title,
                           style: TextStyle(
-                            fontSize: 22,
+                            fontSize: 20,
                             fontWeight: FontWeight.w600,
                           ),
                         )
@@ -62,7 +62,7 @@ class ProfileListWidget extends StatelessWidget {
                 ),
               );
             },
-            separatorBuilder: (context, index) => SizedBox(height: 10),
+            separatorBuilder: (context, index) => SizedBox(height: 13),
             itemCount: profile.length,
           ),
         ),

@@ -30,13 +30,18 @@ class _DashboardPageState extends State<DashboardPage> {
             // Header
             Header(),
 
+            SizedBox(height: 20),
+
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: Container(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  'Water Information',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                  'Check Water Quality',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
@@ -79,7 +84,7 @@ class _DashboardPageState extends State<DashboardPage> {
 
             NewsArticle(
               onTap: () {
-                Navigator.push(context, ArticlePage());
+                Navigator.push(context, ArticlePage() as Route<Object?>);
               },
             ),
           ],

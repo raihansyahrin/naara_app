@@ -40,7 +40,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   topLeft: Radius.circular(100),
                   topRight: Radius.circular(100),
                 ),
-                color: secondary,
+                color: Colors.white,
               ),
             ),
           ),
@@ -53,7 +53,7 @@ class _ProfilePageState extends State<ProfilePage> {
               child: CircleAvatar(
                 radius: 60,
                 backgroundImage: AssetImage(
-                  'assets/images/taman-lansia.jpeg',
+                  'assets/images/profile-picture.png',
                 ),
               ),
             ),
@@ -62,7 +62,7 @@ class _ProfilePageState extends State<ProfilePage> {
             bottom: 0,
             left: 0,
             right: 0,
-            top: 270,
+            top: 290,
             child: Column(
               children: [
                 Text(
@@ -77,6 +77,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
+                    color: Color(0xFF3A4243),
                   ),
                 ),
               ],

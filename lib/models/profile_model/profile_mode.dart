@@ -17,32 +17,32 @@ class ProfileModel {
     profile.add(
       ProfileModel(
         id: 0,
-        icon: Icons.settings_rounded,
-        title: 'Settings',
+        icon: Icons.person_2_rounded,
+        title: 'Edit Profile',
       ),
     );
 
     profile.add(
       ProfileModel(
         id: 0,
-        icon: Icons.language_rounded,
-        title: 'Language',
+        icon: Icons.notifications_on_rounded,
+        title: 'Notification',
       ),
     );
 
     profile.add(
       ProfileModel(
         id: 0,
-        icon: Icons.dark_mode_rounded,
-        title: 'Dark Mode',
+        icon: Icons.storage_rounded,
+        title: 'Storage and Data',
       ),
     );
 
     profile.add(
       ProfileModel(
         id: 0,
-        icon: Icons.logout_rounded,
-        title: 'Sign Out',
+        icon: Icons.help_rounded,
+        title: 'Help',
       ),
     );
 
