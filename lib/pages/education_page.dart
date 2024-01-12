@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hackfest2024_naara/model/education_model/education_model.dart';
-import 'package:hackfest2024_naara/widget/education_page/category_selector_widget.dart';
-import 'package:hackfest2024_naara/widget/education_page/education_list_widget.dart';
-import 'package:hackfest2024_naara/widget/education_page/search_field_widget.dart';
+import 'package:hackfest2024_naara/models/education_model/education_model.dart';
+import 'package:hackfest2024_naara/widgets/education_page/category_selector_widget.dart';
+import 'package:hackfest2024_naara/widgets/education_page/education_list_widget.dart';
+import 'package:hackfest2024_naara/widgets/education_page/search_field_widget.dart';
 
 class EducationPage extends StatefulWidget {
   const EducationPage({super.key});

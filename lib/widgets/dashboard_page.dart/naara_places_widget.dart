@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hackfest2024_naara/model/dashboard_model/places_model.dart';
+import 'package:hackfest2024_naara/models/dashboard_model/places_model.dart';
 
 class NaaraPlaces extends StatelessWidget {
   const NaaraPlaces({

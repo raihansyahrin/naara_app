@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hackfest2024_naara/model/profile_model/profile_mode.dart';
-import 'package:hackfest2024_naara/widget/profile_page/proflie_list_widget.dart';
+import 'package:hackfest2024_naara/models/profile_model/profile_mode.dart';
+import 'package:hackfest2024_naara/widgets/profile_page/proflie_list_widget.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

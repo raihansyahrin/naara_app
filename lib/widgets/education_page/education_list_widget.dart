@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hackfest2024_naara/model/education_model/education_model.dart';
+import 'package:hackfest2024_naara/models/education_model/education_model.dart';
 
 class EducationList extends StatelessWidget {
   const EducationList({

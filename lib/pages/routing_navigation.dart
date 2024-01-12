@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/pages/dashboard_page.dart';
-import 'package:hackfest2024_naara/navigation/navigation_button.dart';
+import 'package:hackfest2024_naara/navigations/navigation_button.dart';
 import 'package:hackfest2024_naara/pages/education_page.dart';
 import 'package:hackfest2024_naara/pages/map_page.dart';
 import 'package:hackfest2024_naara/pages/profile_page.dart';
