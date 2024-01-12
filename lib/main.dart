@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hackfest2024_naara/pages/routing_navigation.dart';
+import 'package:hackfest2024_naara/routes/routing_navigation.dart';
 
 void main() {
   runApp(const MainApp());

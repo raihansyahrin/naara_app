@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/models/profile_model/profile_mode.dart';
+import 'package:hackfest2024_naara/themes/colors.dart';
 import 'package:hackfest2024_naara/widgets/profile_page/proflie_list_widget.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -23,7 +24,7 @@ class _ProfilePageState extends State<ProfilePage> {
       body: Stack(
         children: [
           Container(
-            color: Colors.blue,
+            color: primary,
             width: double.infinity,
             height: MediaQuery.of(context).size.height - 100,
           ),
@@ -39,7 +40,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   topLeft: Radius.circular(100),
                   topRight: Radius.circular(100),
                 ),
-                color: Colors.green,
+                color: secondary,
               ),
             ),
           ),
