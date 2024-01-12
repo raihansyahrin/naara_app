@@ -1,6 +1,6 @@
 # Naara 
 
-Naara is a mobile application designed to address water quality challenges in communities. Built using Flutter, Firebase, and Google Maps API, Naara aims to empower users with valuable information, educational resources, and a platform for clean water and sanitation-related solutions.
+Naara is a mobile application designed to address water quality challenges in communities. Built using Flutter, Firebase, and Google Maps API, Naara aims to empower users with valuable information, educational resources, and a platform for clean water-related solutions.
 
 ## Features
 
