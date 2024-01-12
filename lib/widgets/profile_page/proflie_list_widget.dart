@@ -20,6 +20,8 @@ class ProfileListWidget extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 20),
         child: Container(
           child: ListView.separated(
+            physics: const NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
             itemBuilder: (context, index) {
               return Container(
                 width: 200,
