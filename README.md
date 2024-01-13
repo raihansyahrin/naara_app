@@ -31,7 +31,7 @@ Naara encourages community involvement by allowing users to submit self-reports 
 
 To run Naara on your local machine, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/naara.git`
+1. Clone the repository: `git clone https://github.com/dapraws/naara.git`
 2. Navigate to the project directory: `cd naara`
 3. Install dependencies: `flutter pub get`
 4. Run the application: `flutter run`
