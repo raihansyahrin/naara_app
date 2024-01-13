@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:hackfest2024_naara/widgets/map_page.dart/custom_marker_widget.dart';
 
 class MapPage extends StatefulWidget {
-  const MapPage({super.key});
+  const MapPage({Key? key}) : super(key: key);
 
   @override
   State<MapPage> createState() => _MapPageState();
@@ -28,10 +29,12 @@ class _MapPageState extends State<MapPage> {
             zoom: 11.0,
           ),
           markers: {
-            const Marker(
-              markerId: const MarkerId("Tegallega Park"),
-              position: LatLng(-6.937170155175109, 107.60462976064048),
-            ),
+            CustomMarker.tegallegaPark(),
+            CustomMarker.paskalHyperSquare(),
+            CustomMarker.transmartBuahbatu(),
+            CustomMarker.parisVanJava(),
+            CustomMarker.kiaraArthaPark(),
+            CustomMarker.bandungZoo(),
           },
         ),
       ),
