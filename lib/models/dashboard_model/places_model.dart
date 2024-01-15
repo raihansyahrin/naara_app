@@ -16,7 +16,16 @@ class PlacesModel {
     places.add(
       PlacesModel(
         id: 0,
-        photo: 'assets/images/taman-lansia.jpeg',
+        photo: 'assets/images/telkom-university.png',
+        place_name: 'Telkom University',
+        city: 'Kab. Bandung',
+      ),
+    );
+
+    places.add(
+      PlacesModel(
+        id: 0,
+        photo: 'assets/images/taman-lansia.png',
         place_name: 'Taman Lansia',
         city: 'Kota Bandung',
       ),
@@ -25,20 +34,12 @@ class PlacesModel {
     places.add(
       PlacesModel(
         id: 0,
-        photo: 'assets/images/taman-lansia.jpeg',
+        photo: 'assets/images/metro-indah-mall.png',
         place_name: 'Metro Indah Mall',
         city: 'Kota Bandung',
       ),
     );
 
-    places.add(
-      PlacesModel(
-        id: 0,
-        photo: 'assets/images/taman-lansia.jpeg',
-        place_name: 'Telkom University',
-        city: 'Kab. Bandung',
-      ),
-    );
     return places;
   }
 }

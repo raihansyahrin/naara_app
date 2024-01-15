@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/themes/colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Header extends StatelessWidget {
   const Header({
@@ -20,14 +21,14 @@ class Header extends StatelessWidget {
               children: [
                 Text(
                   "Good Morning,",
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
                 ),
                 Text(
                   "John Doe",
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
@@ -43,7 +44,7 @@ class Header extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
-                    Icons.notifications_active_rounded,
+                    Icons.notifications_active_outlined,
                     size: 30,
                     color: accent,
                   ),

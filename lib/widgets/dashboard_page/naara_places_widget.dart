@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/models/dashboard_model/places_model.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NaaraPlaces extends StatelessWidget {
   const NaaraPlaces({
@@ -19,7 +20,7 @@ class NaaraPlaces extends StatelessWidget {
         itemBuilder: (context, index) {
           return GestureDetector(
             child: Padding(
-              padding: const EdgeInsets.only(left: 20.0),
+              padding: const EdgeInsets.only(left: 15.0),
               child: Container(
                 padding: EdgeInsets.all(5),
                 child: Stack(
@@ -55,7 +56,7 @@ class NaaraPlaces extends StatelessWidget {
                           children: [
                             Text(
                               places[index].place_name,
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                 color: Colors.white,
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -65,7 +66,7 @@ class NaaraPlaces extends StatelessWidget {
                             SizedBox(height: 5),
                             Text(
                               places[index].city,
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:hackfest2024_naara/themes/colors.dart';
 
 class NewsArticle extends StatelessWidget {
   final void Function()? onTap;
@@ -30,7 +32,7 @@ class NewsArticle extends StatelessWidget {
               end: Alignment.topCenter,
             ),
             image: DecorationImage(
-              image: AssetImage("assets/images/taman-lansia.jpeg"),
+              image: AssetImage("assets/images/clean-water.png"),
               fit: BoxFit.cover,
             ),
           ),
@@ -47,21 +49,22 @@ class NewsArticle extends StatelessWidget {
                   //     color: Colors.black,
                   //     borderRadius: BorderRadius.circular(10)),
                   // alignment: Alignment.center,
-                  child: Text(
-                    'Judul artikel',
-                    style: TextStyle(
-                        fontSize: 30,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800),
+                  child: Expanded(
+                    child: Text(
+                      'Naara, Aplikasi Ciptakan Solusi Air Bersih untuk Masyarakat',
+                      style: GoogleFonts.poppins(
+                          fontSize: 15,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800),
+                    ),
                   ),
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(50)),
+                      color: primary, borderRadius: BorderRadius.circular(50)),
                   child: Icon(
                     Icons.chevron_right_rounded,
-                    color: Colors.white,
+                    color: primaryAccent,
                     size: 40,
                   ),
                 )

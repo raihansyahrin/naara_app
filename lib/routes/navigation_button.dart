@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackfest2024_naara/themes/colors.dart';
 
 // ignore: must_be_immutable
 class BottomMenu extends StatelessWidget {
@@ -44,9 +45,9 @@ class BottomMenu extends StatelessWidget {
       // elevation: 0,
       currentIndex: selectedIndex,
       onTap: onClicked,
-      selectedItemColor: Colors.blue,
-      backgroundColor: Color.fromARGB(255, 121, 180, 248),
-      unselectedItemColor: Colors.blue,
+      selectedItemColor: primary,
+      backgroundColor: secondary,
+      unselectedItemColor: primary,
     );
   }
 }

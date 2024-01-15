@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/models/dashboard_model/places_model.dart';
 import 'package:hackfest2024_naara/pages/article_page.dart';
-import 'package:hackfest2024_naara/widgets/dashboard_page.dart/header_widget.dart';
-import 'package:hackfest2024_naara/widgets/dashboard_page.dart/water_information_widget.dart';
-import 'package:hackfest2024_naara/widgets/dashboard_page.dart/naara_places_widget.dart';
-import 'package:hackfest2024_naara/widgets/dashboard_page.dart/news_widget.dart';
+import 'package:hackfest2024_naara/widgets/dashboard_page/header_widget.dart';
+import 'package:hackfest2024_naara/widgets/dashboard_page/water_information_widget.dart';
+import 'package:hackfest2024_naara/widgets/dashboard_page/naara_places_widget.dart';
+import 'package:hackfest2024_naara/widgets/dashboard_page/news_widget.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({Key? key});
@@ -38,8 +39,8 @@ class _DashboardPageState extends State<DashboardPage> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   'Check Water Quality',
-                  style: TextStyle(
-                    fontSize: 16,
+                  style: GoogleFonts.poppins(
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -58,7 +59,8 @@ class _DashboardPageState extends State<DashboardPage> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   'Naara Places',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                  style: GoogleFonts.poppins(
+                      fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
@@ -75,7 +77,8 @@ class _DashboardPageState extends State<DashboardPage> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   'News',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                  style: GoogleFonts.poppins(
+                      fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
@@ -84,7 +87,12 @@ class _DashboardPageState extends State<DashboardPage> {
 
             NewsArticle(
               onTap: () {
-                Navigator.push(context, ArticlePage() as Route<Object?>);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ArticlePage(),
+                  ),
+                );
               },
             ),
           ],
