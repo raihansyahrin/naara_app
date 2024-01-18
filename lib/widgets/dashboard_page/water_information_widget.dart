@@ -35,15 +35,15 @@ class WaterInformation extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            '09.00 AM',
+                            'Good Quality',
                             style: GoogleFonts.poppins(
-                              fontSize: 24,
+                              fontSize: 20,
                               fontWeight: FontWeight.w700,
                               color: light,
                             ),
                           ),
                           Text(
-                            '300ml Water',
+                            'Last Checked',
                             style: GoogleFonts.poppins(
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
@@ -84,7 +84,7 @@ class WaterInformation extends StatelessWidget {
                     children: [
                       Image.asset(
                         'assets/images/naara-water.png',
-                        height: 160,
+                        height: 150,
                       ),
                     ],
                   ),
