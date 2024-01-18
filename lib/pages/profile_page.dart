@@ -24,7 +24,7 @@ class _ProfilePageState extends State<ProfilePage> {
       body: Stack(
         children: [
           Container(
-            color: primary,
+            color: secondary,
             width: double.infinity,
             height: MediaQuery.of(context).size.height - 100,
           ),
