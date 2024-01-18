@@ -11,7 +11,7 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: primary,
+        color: secondary,
       ),
       child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -24,12 +24,18 @@ class Header extends StatelessWidget {
                 Text(
                   "Good Morning,",
                   style: GoogleFonts.poppins(
-                      fontSize: 12, fontWeight: FontWeight.bold, color: light),
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    color: tertiary,
+                  ),
                 ),
                 Text(
                   "John Doe",
                   style: GoogleFonts.poppins(
-                      fontSize: 20, fontWeight: FontWeight.bold, color: light),
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: light,
+                  ),
                 ),
               ],
             ),
@@ -38,13 +44,13 @@ class Header extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
-                    color: secondary,
+                    color: light,
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
                     Icons.notifications_active_outlined,
                     size: 30,
-                    color: light,
+                    color: primary,
                   ),
                 ),
                 SizedBox(

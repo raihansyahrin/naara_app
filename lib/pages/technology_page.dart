@@ -23,22 +23,20 @@ class _TechnologyPageState extends State<TechnologyPage> {
     initModel();
     return Scaffold(
       backgroundColor: light,
+      appBar: AppBar(
+        title: Text(
+          "Naara Technology",
+          style: GoogleFonts.poppins(
+            fontWeight: FontWeight.w800,
+            fontSize: 35,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+      ),
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Align(
-                alignment: Alignment.center,
-                child: Text(
-                  'Naara Technology',
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w800,
-                    fontSize: 35,
-                  ),
-                ),
-              ),
-            ),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),

@@ -5,7 +5,7 @@ import 'package:hackfest2024_naara/themes/colors.dart';
 import 'package:hackfest2024_naara/widgets/dashboard_page/header_widget.dart';
 import 'package:hackfest2024_naara/widgets/dashboard_page/water_information_widget.dart';
 import 'package:hackfest2024_naara/widgets/dashboard_page/naara_places_widget.dart';
-import 'package:hackfest2024_naara/widgets/dashboard_page/news_widget.dart';
+import 'package:hackfest2024_naara/widgets/dashboard_page/naara_news_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -80,7 +80,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   child: Container(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      'News',
+                      'Naara News',
                       style: GoogleFonts.poppins(
                           fontSize: 18, fontWeight: FontWeight.bold),
                     ),

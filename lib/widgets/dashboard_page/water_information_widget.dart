@@ -47,21 +47,21 @@ class WaterInformation extends StatelessWidget {
                             style: GoogleFonts.poppins(
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
-                              color: light,
+                              color: light.shade900,
                             ),
                           ),
                         ],
                       ),
                       Container(
                         padding: EdgeInsets.symmetric(vertical: 7),
-                        width: 120,
+                        width: 135,
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           color: secondary,
                           borderRadius: BorderRadius.circular(50),
                         ),
                         child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Text(
                               'See More',

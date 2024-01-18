@@ -61,7 +61,7 @@ class NewsArticle extends StatelessWidget {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    color: tertiary,
+                    color: primary,
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: Icon(
