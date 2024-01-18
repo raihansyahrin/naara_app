@@ -10,7 +10,6 @@ class BottomMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-
       items: [
         // Home
 
@@ -45,12 +44,11 @@ class BottomMenu extends StatelessWidget {
         ),
       ],
       // elevation: 0,
+      backgroundColor: secondary,
       currentIndex: selectedIndex,
       onTap: onClicked,
       selectedItemColor: primary,
-      backgroundColor: secondary,
       unselectedItemColor: primary,
-      
     );
   }
 }
