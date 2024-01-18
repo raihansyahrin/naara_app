@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/models/education_model/education_model.dart';
+import 'package:hackfest2024_naara/pages/education_article_page.dart';
 import 'package:hackfest2024_naara/widgets/education_page/category_selector_widget.dart';
 import 'package:hackfest2024_naara/widgets/education_page/education_list_widget.dart';
 import 'package:hackfest2024_naara/widgets/education_page/search_field_widget.dart';
@@ -16,6 +17,17 @@ class _EducationPageState extends State<EducationPage> {
 
   void initModel() {
     education_air = EducationAirModel.getEducationAir();
+  }
+
+  void navigateToMenuDetails(int index) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => EducationArticlePage(
+          eduArticle: education_air[index],
+        ),
+      ),
+    );
   }
 
   @override
