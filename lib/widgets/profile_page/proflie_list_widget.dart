@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/models/profile_model/profile_model.dart';
+import 'package:hackfest2024_naara/pages/self_report_page.dart';
 import 'package:hackfest2024_naara/themes/colors.dart';
 
 class ProfileListWidget extends StatelessWidget {
@@ -24,43 +25,52 @@ class ProfileListWidget extends StatelessWidget {
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemBuilder: (context, index) {
-              return Container(
-                width: 200,
-                height: 69,
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                decoration: BoxDecoration(
-                    color: secondary, borderRadius: BorderRadius.circular(10)),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          padding: EdgeInsets.all(3),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(50))),
-                          child: Icon(
-                            profile[index].icon,
-                            size: 40,
-                            color: tertiary,
+              return GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyForm()),
+                  );
+                },
+                child: Container(
+                  width: 200,
+                  height: 69,
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  decoration: BoxDecoration(
+                      color: secondary,
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(3),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(50))),
+                            child: Icon(
+                              profile[index].icon,
+                              size: 40,
+                              color: tertiary,
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        Text(
-                          profile[index].title,
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w600,
-                            color: light,
+                          SizedBox(
+                            width: 20,
                           ),
-                        )
-                      ],
-                    ),
-                  ],
+                          Text(
+                            profile[index].title,
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600,
+                              color: light,
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               );
             },
