@@ -26,6 +26,7 @@ class _DashboardPageState extends State<DashboardPage> {
     initModel();
     return SafeArea(
       child: Scaffold(
+<<<<<<< HEAD
         body: ListView(
           children: [
             Column(
@@ -98,6 +99,76 @@ class _DashboardPageState extends State<DashboardPage> {
                   },
                 ),
               ],
+=======
+        body: Column(
+          children: [
+            // Header
+            Header(),
+
+            SizedBox(height: 20),
+
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Container(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Check Water Quality',
+                  style: GoogleFonts.poppins(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+
+            SizedBox(height: 10),
+
+            WaterInformation(),
+
+            SizedBox(height: 20),
+
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Container(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Naara Places',
+                  style: GoogleFonts.poppins(
+                      fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+
+            SizedBox(height: 10),
+
+            NaaraPlaces(places: places),
+
+            SizedBox(height: 20),
+
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Container(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'News',
+                  style: GoogleFonts.poppins(
+                      fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+
+            SizedBox(height: 10),
+
+            NewsArticle(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ArticlePage(),
+                  ),
+                );
+              },
+>>>>>>> e25f735906dea71883a0c213a390edeaa44178f0
             ),
           ],
         ),

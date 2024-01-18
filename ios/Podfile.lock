@@ -10,15 +10,21 @@ PODS:
   - GoogleMaps/Base (5.2.0)
   - GoogleMaps/Maps (5.2.0):
     - GoogleMaps/Base
+<<<<<<< HEAD
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
+=======
+>>>>>>> e25f735906dea71883a0c213a390edeaa44178f0
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_config (from `.symlinks/plugins/flutter_config/ios`)
   - google_maps_flutter_ios (from `.symlinks/plugins/google_maps_flutter_ios/ios`)
+<<<<<<< HEAD
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+=======
+>>>>>>> e25f735906dea71883a0c213a390edeaa44178f0
 
 SPEC REPOS:
   trunk:
@@ -31,15 +37,21 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_config/ios"
   google_maps_flutter_ios:
     :path: ".symlinks/plugins/google_maps_flutter_ios/ios"
+<<<<<<< HEAD
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
+=======
+>>>>>>> e25f735906dea71883a0c213a390edeaa44178f0
 
 SPEC CHECKSUMS:
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   flutter_config: f48f0d47a284f1791aacce2687eabb3309ba7a41
   google_maps_flutter_ios: d1318b4ff711612cab16862d7a87e31a7403d458
   GoogleMaps: 025272d5876d3b32604e5c080dc25eaf68764693
+<<<<<<< HEAD
   path_provider_foundation: 3784922295ac71e43754bd15e0653ccfd36a147c
+=======
+>>>>>>> e25f735906dea71883a0c213a390edeaa44178f0
 
 PODFILE CHECKSUM: d0f0c280d20d1b903ccd373ec9c9f60116233c1c
 
