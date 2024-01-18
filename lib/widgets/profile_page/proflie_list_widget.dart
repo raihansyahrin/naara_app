@@ -29,7 +29,7 @@ class ProfileListWidget extends StatelessWidget {
                 height: 69,
                 padding: EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
-                    color: primary, borderRadius: BorderRadius.circular(10)),
+                    color: secondary, borderRadius: BorderRadius.circular(10)),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -44,6 +44,7 @@ class ProfileListWidget extends StatelessWidget {
                           child: Icon(
                             profile[index].icon,
                             size: 40,
+                            color: tertiary,
                           ),
                         ),
                         SizedBox(
@@ -54,6 +55,7 @@ class ProfileListWidget extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.w600,
+                            color: light,
                           ),
                         )
                       ],

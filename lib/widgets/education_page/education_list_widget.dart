@@ -55,7 +55,7 @@ class EducationList extends StatelessWidget {
                           style: GoogleFonts.poppins(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
-                              color: primaryAccent),
+                              color: light),
                         ),
                         SizedBox(
                           height: 15,
@@ -65,7 +65,7 @@ class EducationList extends StatelessWidget {
                           style: GoogleFonts.poppins(
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
-                              color: primaryAccent),
+                              color: light),
                         ),
                       ],
                     )

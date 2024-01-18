@@ -60,9 +60,7 @@ class _CategorySelectorState extends State<CategorySelector> {
                   child: Text(
                     categories[index],
                     style: GoogleFonts.poppins(
-                      color: index == selectedIndex
-                          ? Colors.white
-                          : Colors.white60,
+                      color: index == selectedIndex ? Colors.white : light,
                       fontSize: 20,
                       fontWeight: FontWeight.w600,
                     ),

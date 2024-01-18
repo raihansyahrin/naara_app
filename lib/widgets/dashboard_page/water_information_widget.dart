@@ -18,7 +18,7 @@ class WaterInformation extends StatelessWidget {
             width: double.infinity,
             height: 200,
             decoration: BoxDecoration(
-              color: primary,
+              color: tertiary,
               borderRadius: BorderRadius.all(
                 Radius.circular(20),
               ),
@@ -39,6 +39,7 @@ class WaterInformation extends StatelessWidget {
                             style: GoogleFonts.poppins(
                               fontSize: 24,
                               fontWeight: FontWeight.w700,
+                              color: light,
                             ),
                           ),
                           Text(
@@ -46,6 +47,7 @@ class WaterInformation extends StatelessWidget {
                             style: GoogleFonts.poppins(
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
+                              color: light,
                             ),
                           ),
                         ],
@@ -64,14 +66,14 @@ class WaterInformation extends StatelessWidget {
                             Text(
                               'See More',
                               style: GoogleFonts.poppins(
-                                color: primaryAccent,
+                                color: light,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
                             Icon(
                               Icons.keyboard_arrow_right_rounded,
-                              color: primaryAccent,
+                              color: light,
                             ),
                           ],
                         ),
