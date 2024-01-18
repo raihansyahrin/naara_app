@@ -103,7 +103,6 @@ class _TechnologyPageState extends State<TechnologyPage> {
     );
   }
 }
-<<<<<<< HEAD
 
 
 // import 'package:flutter/material.dart';
@@ -211,5 +210,3 @@ class _TechnologyPageState extends State<TechnologyPage> {
 //     );
 //   }
 // }
-=======
->>>>>>> e25f735906dea71883a0c213a390edeaa44178f0
