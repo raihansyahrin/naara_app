@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/models/dashboard_model/places_model.dart';
 import 'package:hackfest2024_naara/pages/article_page.dart';
+import 'package:hackfest2024_naara/themes/colors.dart';
 import 'package:hackfest2024_naara/widgets/dashboard_page/header_widget.dart';
 import 'package:hackfest2024_naara/widgets/dashboard_page/water_information_widget.dart';
 import 'package:hackfest2024_naara/widgets/dashboard_page/naara_places_widget.dart';
@@ -26,6 +27,7 @@ class _DashboardPageState extends State<DashboardPage> {
     initModel();
     return SafeArea(
       child: Scaffold(
+        backgroundColor: light,
         body: ListView(
           children: [
             Column(

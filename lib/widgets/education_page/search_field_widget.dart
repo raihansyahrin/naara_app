@@ -31,14 +31,14 @@ class SearchField extends StatelessWidget {
                 textAlignVertical: TextAlignVertical.center,
                 decoration: InputDecoration(
                   hintText: 'Search',
-                  hintStyle: TextStyle(color: tertiary),
+                  hintStyle: TextStyle(color: light),
                   contentPadding: EdgeInsets.symmetric(horizontal: 15),
                   prefixIcon: Padding(
                     padding: const EdgeInsets.all(12),
                     child: Icon(
                       Icons.search_rounded,
                       size: 24,
-                      color: tertiary,
+                      color: light,
                     ),
                   ),
                   border: InputBorder.none,

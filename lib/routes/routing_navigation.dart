@@ -5,6 +5,7 @@ import 'package:hackfest2024_naara/pages/education_page.dart';
 import 'package:hackfest2024_naara/pages/map_page.dart';
 import 'package:hackfest2024_naara/pages/profile_page.dart';
 import 'package:hackfest2024_naara/pages/technology_page.dart';
+import 'package:hackfest2024_naara/themes/colors.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -33,6 +34,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: light,
         // appBar: AppBar(
         //   title: Text('Movies'),
         //   backgroundColor: Colors.black,

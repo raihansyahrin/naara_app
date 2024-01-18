@@ -21,6 +21,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     initModel();
     return Scaffold(
+      backgroundColor: light,
       body: Stack(
         children: [
           Container(
@@ -40,7 +41,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   topLeft: Radius.circular(100),
                   topRight: Radius.circular(100),
                 ),
-                color: Colors.white,
+                color: light,
               ),
             ),
           ),

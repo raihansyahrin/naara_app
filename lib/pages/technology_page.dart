@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hackfest2024_naara/models/technology_model/technology_model.dart';
+import 'package:hackfest2024_naara/themes/colors.dart';
 
 class TechnologyPage extends StatefulWidget {
   const TechnologyPage({Key? key});
@@ -20,18 +22,19 @@ class _TechnologyPageState extends State<TechnologyPage> {
   Widget build(BuildContext context) {
     initModel();
     return Scaffold(
+      backgroundColor: light,
       body: SafeArea(
         child: Column(
           children: [
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Align(
-                alignment: Alignment.centerLeft,
+                alignment: Alignment.center,
                 child: Text(
                   'Naara Technology',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w800,
+                    fontSize: 35,
                   ),
                 ),
               ),

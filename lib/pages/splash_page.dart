@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackfest2024_naara/themes/colors.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -8,7 +9,7 @@ class SplashPage extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xFFFCFFFE),
+        backgroundColor: light,
         body: Center(
           child: Container(
             child: Image.asset(

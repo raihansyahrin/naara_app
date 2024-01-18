@@ -11,7 +11,7 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: secondary,
+        color: primary,
       ),
       child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -38,13 +38,13 @@ class Header extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
-                    color: light,
+                    color: secondary,
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
                     Icons.notifications_active_outlined,
                     size: 30,
-                    color: primary,
+                    color: light,
                   ),
                 ),
                 SizedBox(

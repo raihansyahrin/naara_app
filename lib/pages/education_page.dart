@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/models/education_model/education_model.dart';
+import 'package:hackfest2024_naara/themes/colors.dart';
 import 'package:hackfest2024_naara/widgets/education_page/category_selector_widget.dart';
 import 'package:hackfest2024_naara/widgets/education_page/education_list_widget.dart';
 import 'package:hackfest2024_naara/widgets/education_page/search_field_widget.dart';
@@ -29,6 +30,7 @@ class _EducationPageState extends State<EducationPage> {
   Widget build(BuildContext context) {
     initModel();
     return Scaffold(
+      backgroundColor: light,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
