@@ -18,7 +18,7 @@ class WaterInformation extends StatelessWidget {
             width: double.infinity,
             height: 200,
             decoration: BoxDecoration(
-              color: secondary,
+              color: primary,
               borderRadius: BorderRadius.all(
                 Radius.circular(20),
               ),
@@ -55,7 +55,7 @@ class WaterInformation extends StatelessWidget {
                         width: 120,
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
-                          color: primary,
+                          color: secondary,
                           borderRadius: BorderRadius.circular(50),
                         ),
                         child: Row(
@@ -81,7 +81,7 @@ class WaterInformation extends StatelessWidget {
                   Column(
                     children: [
                       Image.asset(
-                        'assets/images/water-glass-image.png',
+                        'assets/images/naara-water.png',
                         height: 160,
                       ),
                     ],
