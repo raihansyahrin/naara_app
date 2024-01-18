@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hackfest2024_naara/models/education_model/education_model.dart';
 
 class EducationList extends StatelessWidget {
@@ -36,14 +37,14 @@ class EducationList extends StatelessWidget {
                   children: [
                     Text(
                       education_air[index].title,
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
                     Text(
                       education_air[index].date,
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
                       ),

@@ -25,8 +25,8 @@ class PlacesModel {
     places.add(
       PlacesModel(
         id: 0,
-        photo: 'assets/images/taman-lansia.png',
-        place_name: 'Taman Lansia',
+        photo: 'assets/images/metro-indah-mall.png',
+        place_name: 'Metro Indah Mall',
         city: 'Kota Bandung',
       ),
     );
@@ -34,8 +34,8 @@ class PlacesModel {
     places.add(
       PlacesModel(
         id: 0,
-        photo: 'assets/images/metro-indah-mall.png',
-        place_name: 'Metro Indah Mall',
+        photo: 'assets/images/taman-lansia.png',
+        place_name: 'Taman Lansia',
         city: 'Kota Bandung',
       ),
     );

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:hackfest2024_naara/themes/colors.dart';
 
 class CategorySelector extends StatefulWidget {
   const CategorySelector({super.key});
@@ -37,13 +39,11 @@ class _CategorySelectorState extends State<CategorySelector> {
                         vertical: 5,
                       ),
                       decoration: BoxDecoration(
-                          color: index == selectedIndex
-                              ? Colors.black
-                              : Color.fromARGB(255, 95, 95, 95),
+                          color: index == selectedIndex ? primary : secondary,
                           borderRadius: BorderRadius.circular(50)),
                       child: Text(
                         categories[index],
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           color: index == selectedIndex
                               ? Colors.white
                               : Colors.white60,
