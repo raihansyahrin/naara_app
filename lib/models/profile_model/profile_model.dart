@@ -25,10 +25,18 @@ class ProfileModel {
     profile.add(
       ProfileModel(
         id: 0,
-        icon: Icons.notifications_on_rounded,
-        title: 'Notification',
+        icon: Icons.report,
+        title: 'Self Report',
       ),
     );
+
+    // profile.add(
+    //   ProfileModel(
+    //     id: 0,
+    //     icon: Icons.notifications_on_rounded,
+    //     title: 'Notification',
+    //   ),
+    // );
 
     profile.add(
       ProfileModel(

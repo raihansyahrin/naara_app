@@ -68,6 +68,8 @@ class TechnologyModel {
       ),
     );
 
+   
+
     return technology;
   }
 }
