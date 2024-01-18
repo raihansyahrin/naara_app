@@ -13,9 +13,16 @@ class EducationPage extends StatefulWidget {
 
 class _EducationPageState extends State<EducationPage> {
   List<EducationAirModel> education_air = [];
+  List<EducationAirModel> education_air_filtered = [];
 
   void initModel() {
     education_air = EducationAirModel.getEducationAir();
+    education_air_filtered = List.from(education_air);
+  }
+
+  List<EducationAirModel> filterEducationByCategory(String selectedCategory) {
+    return EducationAirModel.filterEducationByCategory(
+        education_air, selectedCategory);
   }
 
   @override

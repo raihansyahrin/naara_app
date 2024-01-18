@@ -1,5 +1,6 @@
 class EducationAirModel {
   int id;
+  String category;
   String photo;
   String title;
   String date;
@@ -8,6 +9,7 @@ class EducationAirModel {
   EducationAirModel(
       {required this.id,
       required this.photo,
+      required this.category,
       required this.title,
       required this.date,
       required this.content});
@@ -18,7 +20,8 @@ class EducationAirModel {
     education_air.add(
       EducationAirModel(
         id: 0,
-        photo: 'assets/images/taman-lansia.png',
+        category: 'Air',
+        photo: 'assets/images/education-image.png',
         title: 'Air Untuk Kebutuhan',
         date: '12 Des 2023',
         content:
@@ -29,7 +32,8 @@ class EducationAirModel {
     education_air.add(
       EducationAirModel(
         id: 0,
-        photo: 'assets/images/taman-lansia.png',
+        category: 'Sabun',
+        photo: 'assets/images/education-image.png',
         title: 'Minum Sehat',
         date: '02 Jan 2024',
         content:
@@ -40,7 +44,8 @@ class EducationAirModel {
     education_air.add(
       EducationAirModel(
         id: 0,
-        photo: 'assets/images/taman-lansia.png',
+        category: 'Tutorial',
+        photo: 'assets/images/education-image.png',
         title: 'Memasak Air',
         date: '08 Jan 2024',
         content:
@@ -51,7 +56,8 @@ class EducationAirModel {
     education_air.add(
       EducationAirModel(
         id: 0,
-        photo: 'assets/images/taman-lansia.png',
+        category: 'Cuci Tangan',
+        photo: 'assets/images/education-image.png',
         title: 'Air Untuk Kebutuhan',
         date: '12 Des 2023',
         content:
@@ -62,7 +68,8 @@ class EducationAirModel {
     education_air.add(
       EducationAirModel(
         id: 0,
-        photo: 'assets/images/taman-lansia.png',
+        category: 'Air',
+        photo: 'assets/images/education-image.png',
         title: 'Minum Sehat',
         date: '02 Jan 2024',
         content:
@@ -73,7 +80,8 @@ class EducationAirModel {
     education_air.add(
       EducationAirModel(
         id: 0,
-        photo: 'assets/images/taman-lansia.png',
+        category: 'Tutorial',
+        photo: 'assets/images/education-image.png',
         title: 'Memasak Air',
         date: '08 Jan 2024',
         content:
@@ -81,5 +89,12 @@ class EducationAirModel {
       ),
     );
     return education_air;
+  }
+
+  static List<EducationAirModel> filterEducationByCategory(
+      List<EducationAirModel> educationList, String selectedCategory) {
+    return educationList
+        .where((education) => education.category == selectedCategory)
+        .toList();
   }
 }
