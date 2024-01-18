@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hackfest2024_naara/models/profile_model/profile_mode.dart';
+import 'package:hackfest2024_naara/models/profile_model/profile_model.dart';
 import 'package:hackfest2024_naara/themes/colors.dart';
 
 class ProfileListWidget extends StatelessWidget {
