@@ -10,8 +10,10 @@ class BottomMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+
       items: [
         // Home
+
         BottomNavigationBarItem(
           activeIcon: Icon(Icons.home, size: 30),
           icon: Icon(Icons.home_outlined, size: 30),
@@ -48,6 +50,7 @@ class BottomMenu extends StatelessWidget {
       selectedItemColor: primary,
       backgroundColor: secondary,
       unselectedItemColor: primary,
+      
     );
   }
 }
