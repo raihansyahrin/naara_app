@@ -39,14 +39,16 @@ class _MyFormState extends State<MyForm> {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
+
             TextField(
-              // style: TextStyle(fontSize: 30),
               controller: _messageFieldController,
               decoration: InputDecoration(
                 hintText: 'Enter Message',
                 border: OutlineInputBorder(),
               ),
             ),
+            // style: TextStyle(fontSize: 30),
+
             SizedBox(height: 20),
             GestureDetector(
               onTap: () {

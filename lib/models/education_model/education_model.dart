@@ -1,4 +1,4 @@
-class EducationAirModel {
+  class EducationAirModel {
   int id;
   String category;
   String photo;

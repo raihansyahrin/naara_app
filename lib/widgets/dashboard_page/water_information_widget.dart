@@ -13,11 +13,11 @@ class WaterInformation extends StatelessWidget {
       children: [
         Container(),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Container(
             width: double.infinity,
             height: 200,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: tertiary,
               borderRadius: BorderRadius.all(
                 Radius.circular(20),
@@ -53,7 +53,7 @@ class WaterInformation extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        padding: EdgeInsets.symmetric(vertical: 7),
+                        padding: const EdgeInsets.symmetric(vertical: 7),
                         width: 135,
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
@@ -71,7 +71,7 @@ class WaterInformation extends StatelessWidget {
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
-                            Icon(
+                            const Icon(
                               Icons.keyboard_arrow_right_rounded,
                               color: light,
                             ),

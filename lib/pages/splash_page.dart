@@ -11,12 +11,10 @@ class SplashPage extends StatelessWidget {
       home: Scaffold(
         backgroundColor: light,
         body: Center(
-          child: Container(
-            child: Image.asset(
-              'assets/images/logo.png',
-              width: 148,
-              height: 151,
-            ),
+          child: Image.asset(
+            'assets/images/logo.png',
+            width: 148,
+            height: 151,
           ),
         ),
       ),

@@ -15,14 +15,14 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int selectedIndex = 0;
+  int selectedIndex = 2;
 
   List screens = [
-    DashboardPage(),
-    EducationPage(),
-    MapPage(),
-    TechnologyPage(),
-    ProfilePage(),
+    const DashboardPage(),
+    const EducationPage(),
+    const MapPage(),
+    const TechnologyPage(),
+    const ProfilePage(),
   ];
 
   void onClicked(int index) {

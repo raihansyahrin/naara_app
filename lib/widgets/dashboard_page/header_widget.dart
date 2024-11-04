@@ -3,14 +3,12 @@ import 'package:hackfest2024_naara/themes/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Header extends StatelessWidget {
-  const Header({
-    Key? key,
-  }) : super(key: key);
+  const Header({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: secondary,
       ),
       child: Padding(
@@ -22,7 +20,7 @@ class Header extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Good Morning,",
+                  'Good Morning,',
                   style: GoogleFonts.poppins(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
@@ -30,9 +28,9 @@ class Header extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "John Doe",
+                  'MUHAMAD RAIHAN S. S.',
                   style: GoogleFonts.poppins(
-                    fontSize: 25,
+                    fontSize: 16,
                     fontWeight: FontWeight.bold,
                     color: light,
                   ),
@@ -42,24 +40,23 @@ class Header extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  padding: EdgeInsets.all(5),
-                  decoration: BoxDecoration(
+                  padding: const EdgeInsets.all(5),
+                  decoration: const BoxDecoration(
                     color: light,
                     shape: BoxShape.circle,
                   ),
-                  child: Icon(
+                  child: const Icon(
                     Icons.notifications_active_outlined,
                     size: 30,
                     color: primary,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Container(
-                  padding: EdgeInsets.all(5),
-                  decoration: BoxDecoration(
-                    // color: Colors.black,
+                  padding: const EdgeInsets.all(5),
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
                   child: ClipRRect(

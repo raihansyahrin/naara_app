@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:hackfest2024_naara/models/education_model/education_model.dart';
 import 'package:hackfest2024_naara/themes/colors.dart';
 import 'package:hackfest2024_naara/widgets/education_page/category_selector_widget.dart';
@@ -13,17 +14,17 @@ class EducationPage extends StatefulWidget {
 }
 
 class _EducationPageState extends State<EducationPage> {
-  List<EducationAirModel> education_air = [];
-  List<EducationAirModel> education_air_filtered = [];
+  List<EducationAirModel> educationAir = [];
+  List<EducationAirModel> educationAirFiltered = [];
 
   void initModel() {
-    education_air = EducationAirModel.getEducationAir();
-    education_air_filtered = List.from(education_air);
+    educationAir = EducationAirModel.getEducationAir();
+    educationAirFiltered = List.from(educationAir);
   }
 
   List<EducationAirModel> filterEducationByCategory(String selectedCategory) {
     return EducationAirModel.filterEducationByCategory(
-        education_air, selectedCategory);
+        educationAir, selectedCategory);
   }
 
   @override
@@ -31,38 +32,32 @@ class _EducationPageState extends State<EducationPage> {
     initModel();
     return Scaffold(
       backgroundColor: light,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              // search bar
-              SizedBox(height: 15),
-
-              SearchField(),
-
-              SizedBox(height: 15),
-
-              CategorySelector(),
-
-              SizedBox(height: 15),
-
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                child: Container(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'Air',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+      body: AnnotatedRegion(
+        value: SystemUiOverlayStyle.dark,
+        child: SafeArea(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                const SizedBox(height: 15),
+                const SearchField(),
+                const SizedBox(height: 15),
+                const CategorySelector(),
+                const SizedBox(height: 15),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: Container(
+                    alignment: Alignment.centerLeft,
+                    child: const Text(
+                      'Air',
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                    ),
                   ),
                 ),
-              ),
-
-              SizedBox(height: 10),
-
-              EducationList(
-                education_air: education_air,
-              ),
-            ],
+                const SizedBox(height: 10),
+                EducationList(educationAir: educationAir),
+              ],
+            ),
           ),
         ),
       ),

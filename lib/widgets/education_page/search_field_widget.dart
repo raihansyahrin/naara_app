@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hackfest2024_naara/themes/colors.dart';
 
 class SearchField extends StatelessWidget {
-  const SearchField({
-    super.key,
-  });
+  const SearchField({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +20,11 @@ class SearchField extends StatelessWidget {
                     color: Colors.grey.withOpacity(0.8),
                     spreadRadius: 0,
                     blurRadius: 4,
-                    offset: Offset(1, 4),
+                    offset: const Offset(1, 4),
                   ),
                 ],
               ),
-              child: TextField(
+              child: const TextField(
                 textAlign: TextAlign.start,
                 textAlignVertical: TextAlignVertical.center,
                 decoration: InputDecoration(
@@ -34,7 +32,7 @@ class SearchField extends StatelessWidget {
                   hintStyle: TextStyle(color: light),
                   contentPadding: EdgeInsets.symmetric(horizontal: 15),
                   prefixIcon: Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12),
                     child: Icon(
                       Icons.search_rounded,
                       size: 24,
@@ -46,9 +44,7 @@ class SearchField extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            width: 15,
-          ),
+          const SizedBox(width: 15),
         ],
       ),
     );

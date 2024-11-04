@@ -7,78 +7,70 @@ import 'package:hackfest2024_naara/themes/colors.dart';
 class EducationList extends StatelessWidget {
   const EducationList({
     Key? key,
-    required this.education_air,
+    required this.educationAir,
   }) : super(key: key);
 
-  final List<EducationAirModel> education_air;
+  final List<EducationAirModel> educationAir;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
-      child: Container(
-        child: ListView.separated(
-          physics: const NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
-          itemBuilder: (context, index) {
-            return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const ArticlePage()),
-                );
-              },
-              child: Container(
-                padding: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: secondary,
-                  borderRadius: BorderRadius.circular(17),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.asset(
-                        education_air[index].photo,
-                        height: 80,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          education_air[index].title,
-                          style: GoogleFonts.poppins(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600,
-                              color: light),
-                        ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        Text(
-                          education_air[index].date,
-                          style: GoogleFonts.poppins(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w400,
-                              color: light),
-                        ),
-                      ],
-                    )
-                  ],
-                ),
+      child: ListView.separated(
+        physics: const NeverScrollableScrollPhysics(),
+        shrinkWrap: true,
+        separatorBuilder: (context, index) => const SizedBox(height: 20),
+        itemCount: educationAir.length,
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ArticlePage()),
+              );
+            },
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: secondary,
+                borderRadius: BorderRadius.circular(17),
               ),
-            );
-          },
-          separatorBuilder: (context, index) => SizedBox(
-            height: 20,
-          ),
-          itemCount: education_air.length,
-        ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Image.asset(
+                      educationAir[index].photo,
+                      height: 80,
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        educationAir[index].title,
+                        style: GoogleFonts.poppins(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
+                            color: light),
+                      ),
+                      const SizedBox(height: 15),
+                      Text(
+                        educationAir[index].date,
+                        style: GoogleFonts.poppins(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            color: light),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+          );
+        },
       ),
     );
   }

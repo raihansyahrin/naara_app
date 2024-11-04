@@ -12,7 +12,7 @@ class NaaraPlaces extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 140,
       child: ListView.builder(
         shrinkWrap: true,
@@ -22,7 +22,7 @@ class NaaraPlaces extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(left: 15.0),
               child: Container(
-                padding: EdgeInsets.all(5),
+                padding: const EdgeInsets.all(5),
                 child: Stack(
                   children: [
                     ClipRRect(
@@ -42,7 +42,7 @@ class NaaraPlaces extends StatelessWidget {
                             Colors.grey.withOpacity(0.0),
                             Colors.black,
                           ],
-                          stops: [0.0, 1.0],
+                          stops: const [0.0, 1.0],
                         ),
                       ),
                     ),
@@ -63,7 +63,7 @@ class NaaraPlaces extends StatelessWidget {
                                 height: 1,
                               ),
                             ),
-                            SizedBox(height: 5),
+                            const SizedBox(height: 5),
                             Text(
                               places[index].city,
                               style: GoogleFonts.poppins(

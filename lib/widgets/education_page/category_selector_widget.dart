@@ -13,17 +13,17 @@ class CategorySelector extends StatefulWidget {
 class _CategorySelectorState extends State<CategorySelector> {
   int selectedIndex = 0;
   final List<String> categories = ['Air', 'Sabun', 'Tutorial', 'Cuci Tangan'];
-  List<EducationAirModel> education_air = [];
-  List<EducationAirModel> education_air_filtered = [];
+  List<EducationAirModel> educationAir = [];
+  List<EducationAirModel> educationAirFiltered = [];
 
   void initModel() {
-    education_air = EducationAirModel.getEducationAir();
-    education_air_filtered = List.from(education_air);
+    educationAir = EducationAirModel.getEducationAir();
+    educationAirFiltered = List.from(educationAir);
   }
 
   List<EducationAirModel> filterEducationByCategory(String selectedCategory) {
     return EducationAirModel.filterEducationByCategory(
-        education_air, selectedCategory);
+        educationAir, selectedCategory);
   }
 
   @override
@@ -31,25 +31,28 @@ class _CategorySelectorState extends State<CategorySelector> {
     initModel();
     return Container(
       height: 50,
-      // color: Colors.cyan,
       alignment: Alignment.topCenter,
       child: ListView.separated(
-        padding: EdgeInsets.only(left: 20),
+        padding: const EdgeInsets.only(left: 20),
         scrollDirection: Axis.horizontal,
+        separatorBuilder: (context, index) => const SizedBox(width: 10),
+        itemCount: categories.length,
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-              setState(() {
-                selectedIndex = index;
-                education_air_filtered =
-                    filterEducationByCategory(categories[index]);
-              });
+              setState(
+                () {
+                  selectedIndex = index;
+                  educationAirFiltered =
+                      filterEducationByCategory(categories[index]);
+                },
+              );
             },
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     horizontal: 20,
                     vertical: 5,
                   ),
@@ -70,10 +73,6 @@ class _CategorySelectorState extends State<CategorySelector> {
             ),
           );
         },
-        separatorBuilder: (context, index) => SizedBox(
-          width: 10,
-        ),
-        itemCount: categories.length,
       ),
     );
   }

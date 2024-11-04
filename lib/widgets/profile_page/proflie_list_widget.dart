@@ -17,66 +17,63 @@ class ProfileListWidget extends StatelessWidget {
       bottom: 0,
       left: 0,
       right: 0,
-      top: 360,
+      top: 390,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
-        child: Container(
-          child: ListView.separated(
-            physics: const NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
-            itemBuilder: (context, index) {
-              return GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => MyForm()),
-                  );
-                },
-                child: Container(
-                  width: 200,
-                  height: 69,
-                  padding: EdgeInsets.symmetric(horizontal: 10),
-                  decoration: BoxDecoration(
-                      color: secondary,
-                      borderRadius: BorderRadius.circular(10)),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.all(3),
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(50))),
-                            child: Icon(
-                              profile[index].icon,
-                              size: 40,
-                              color: tertiary,
-                            ),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: ListView.separated(
+          physics: const NeverScrollableScrollPhysics(),
+          shrinkWrap: true,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyForm()),
+                );
+              },
+              child: Container(
+                width: 200,
+                height: 69,
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                decoration: BoxDecoration(
+                    color: secondary, borderRadius: BorderRadius.circular(10)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.all(3),
+                          decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(50))),
+                          child: Icon(
+                            profile[index].icon,
+                            size: 40,
+                            color: tertiary,
                           ),
-                          SizedBox(
-                            width: 20,
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          profile[index].title,
+                          style: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600,
+                            color: light,
                           ),
-                          Text(
-                            profile[index].title,
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w600,
-                              color: light,
-                            ),
-                          )
-                        ],
-                      ),
-                    ],
-                  ),
+                        )
+                      ],
+                    ),
+                  ],
                 ),
-              );
-            },
-            separatorBuilder: (context, index) => SizedBox(height: 13),
-            itemCount: profile.length,
-          ),
+              ),
+            );
+          },
+          separatorBuilder: (context, index) => const SizedBox(height: 13),
+          itemCount: profile.length,
         ),
       ),
     );
